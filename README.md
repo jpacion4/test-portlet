@@ -1,5 +1,6 @@
 test-portlet
 ====
+jpacion4
 
 Aipoでのテストアプリの作成用リポジトリです。
 
