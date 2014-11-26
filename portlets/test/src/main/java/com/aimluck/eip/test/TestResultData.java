@@ -94,6 +94,12 @@ public class TestResultData implements ALData {
   /** ユーザID */
   private ALStringField user_id;
 
+
+
+  private ALStringField url;
+
+
+
   /**
    * 期限状態（期限前/期限当日/期限後）． <br>
    * クラス TestUtils の変数 LIMIT_STATE_BEFORE，LIMIT_STATE_TODAY，LIMIT_STATE_AFTER
@@ -272,6 +278,31 @@ public class TestResultData implements ALData {
   /**
    * @return
    */
+
+
+  public void setUrl(String string) {
+	    url.setValue(string);
+  }
+
+
+  public String getUrl() {
+	    return ALEipUtils.getMessageList(url.getValue());
+	  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  public void setPublicFlag(boolean bool) {
 //    is_public = bool;
 //  }

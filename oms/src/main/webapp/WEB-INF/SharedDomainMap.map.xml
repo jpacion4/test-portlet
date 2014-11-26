@@ -426,6 +426,7 @@
 		<db-attribute name="NOTE" type="CLOB"/>
 		<db-attribute name="TEST_ID" type="INTEGER" isPrimaryKey="true" isGenerated="true" isMandatory="true" length="4"/>
 		<db-attribute name="TEST_NAME" type="VARCHAR" length="99"/>
+		<db-attribute name="TEST_URL" type="VARCHAR" length="200"/>
 		<db-attribute name="UPDATE_DATE" type="TIMESTAMP" length="8"/>
 		<db-attribute name="USER_ID" type="INTEGER" isMandatory="true" length="4"/>
 	</db-entity>
@@ -967,6 +968,7 @@
 		<obj-attribute name="createDate" type="java.util.Date" db-attribute-path="CREATE_DATE"/>
 		<obj-attribute name="note" type="java.lang.String" db-attribute-path="NOTE"/>
 		<obj-attribute name="testName" type="java.lang.String" db-attribute-path="TEST_NAME"/>
+		<obj-attribute name="testUrl" type="java.lang.String" db-attribute-path="TEST_URL"/>
 		<obj-attribute name="updateDate" type="java.util.Date" db-attribute-path="UPDATE_DATE"/>
 		<obj-attribute name="userId" type="java.lang.Integer" db-attribute-path="USER_ID"/>
 	</obj-entity>

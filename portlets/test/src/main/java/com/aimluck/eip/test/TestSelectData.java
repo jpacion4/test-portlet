@@ -548,6 +548,11 @@ public class TestSelectData extends
       rd.initField();
       rd.setTestName(record.getTestName());
       rd.setTestId(record.getTestId().longValue());
+
+
+      rd.setTestUrl(record.getTestUrl());
+
+
 //      rd
 //        .setCategoryId(record.getEipTTestCategory().getCategoryId().longValue());
 //      rd.setCategoryName(record.getEipTTestCategory().getCategoryName());

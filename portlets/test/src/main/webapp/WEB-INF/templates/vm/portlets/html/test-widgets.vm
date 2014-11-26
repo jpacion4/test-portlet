@@ -19,7 +19,7 @@
 ## ---------------------------------------------------------------------------
 #set ($newUrl1 = $!utils.escapeXML($!jslink.getPortletById($!portlet.ID).addQueryData("template","TestFormScreen").addQueryData("entityid","new")))
 #set ($newUrl2 = $!utils.escapeXML($!jslink.getPortletById($!portlet.ID).addQueryData("template","TestCategoryFormScreen").addQueryData("entityid","new")))
-#set ($submenulist = [["Testを追加する","javascript:aipo.common.showDialog('$newUrl1','$!portlet.ID',aipo.test.onLoadTestDialog);","images/icon/icon_add.gif"], [$l10n.TODO_CATEGORY_ADD,"javascript:aipo.common.showDialog('$newUrl2','$!portlet.ID',aipo.test.onLoadCategoryDialog);","images/icon/icon_add.gif"]])
+#set ($submenulist = [["ブックマークを追加する","javascript:aipo.common.showDialog('$newUrl1','$!portlet.ID',aipo.test.onLoadTestDialog);","images/icon/icon_add.gif"], [$l10n.TODO_CATEGORY_ADD,"javascript:aipo.common.showDialog('$newUrl2','$!portlet.ID',aipo.test.onLoadCategoryDialog);","images/icon/icon_add.gif"]])
 #set ($menues = [[$l10n.TODO_ALL_CATEGORY, "list","$!jslink.getPortletById($!portlet.ID).addQueryData('template','TestListScreen').addQueryData('tab','list').addQueryData('reset_keyword_params','true')"]])
 #set ($menues2 = [[$l10n.TODO_CATEGORY_LIST, "category","$!jslink.getPortletById($!portlet.ID).addQueryData('template','TestCategoryListScreen').addQueryData('reset_params','true').addQueryData('reset_keyword_params','true')"]])
 #set ($menues3 = [[$l10n.TODO_FINISH_TODO, "complete", "$!jslink.getPortletById($!portlet.ID).addQueryData('template','TestListScreen').addQueryData('tab','complete').addQueryData('reset_params','true').addQueryData('reset_keyword_params','true')"]])
@@ -27,7 +27,7 @@
 ## ---------------------------------------------------------------------------
 <div id="auiWidgetsArea" #if("${clientVer}" == "4") style="position:static" #elseif("${client}" == "IPHONE") style="position:fixed" #end>
 <div class="auiWidget clearfix">
-#AUIbuttonAction("Testを追加する" "javascript:aipo.common.showDialog('$newUrl1','$!portlet.ID',aipo.test.onLoadTestDialog);")
+#AUIbuttonAction("ブックマークを追加する" "javascript:aipo.common.showDialog('$newUrl1','$!portlet.ID',aipo.test.onLoadTestDialog);")
 </div>
 ##<div class="auiWidget clearfix">
 ##AUIwidgetViewPageMenuList($menues $!result.currentTab)

@@ -10,6 +10,7 @@ public class _EipTTest extends org.apache.cayenne.CayenneDataObject {
     public static final String CREATE_DATE_PROPERTY = "createDate";
     public static final String NOTE_PROPERTY = "note";
     public static final String TEST_NAME_PROPERTY = "testName";
+    public static final String TEST_URL_PROPERTY = "testUrl";
     public static final String UPDATE_DATE_PROPERTY = "updateDate";
     public static final String USER_ID_PROPERTY = "userId";
     public static final String TURBINE_USER_PROPERTY = "turbineUser";
@@ -37,6 +38,14 @@ public class _EipTTest extends org.apache.cayenne.CayenneDataObject {
     }
     public String getTestName() {
         return (String)readProperty("testName");
+    }
+    
+    
+    public void setTestUrl(String testUrl) {
+        writeProperty("testUrl", testUrl);
+    }
+    public String getTestUrl() {
+        return (String)readProperty("testUrl");
     }
     
     

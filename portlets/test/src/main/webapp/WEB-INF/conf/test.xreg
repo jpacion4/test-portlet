@@ -23,14 +23,14 @@
     <portlet-entry name="Test" hidden="false" type="ref" parent="Velocity" application="false">
         <security-ref parent="user-view"/>
         <meta-info>
-            <title>Test</title>
-            <description>テストポートレットです。</description>
+            <title>ブックマーク</title>
+            <description>ブックマークポートレットです。</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="test" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>Test表示件数（トップページ）</title>
+                <title>ブックマーク表示件数（トップページ）</title>
             </meta-info>
         </parameter>
         <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -38,7 +38,7 @@
         <parameter name="p1a-rows.style.values" value="5件,10件,20件,50件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="p1b-rows" value="20" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
             <meta-info>
-                <title>Test表示件数</title>
+                <title>ブックマーク表示件数</title>
             </meta-info>
         </parameter>
         <parameter name="p1b-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
@@ -49,7 +49,7 @@
         <parameter name="function_mode1" value="TestFormScreen" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_screen1" value="true" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_image1" value="icon/icon_add.gif" hidden="true" cachedOnName="true" cachedOnValue="true"/>
-        <parameter name="function_caption1" value="Test追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="function_caption1" value="ブックマーク追加" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <parameter name="function_after_function1" value="aipo.test.onLoadTestDialog" hidden="true" cachedOnName="true" cachedOnValue="true"/>
         <media-type ref="html"/>
         <url cachedOnURL="true"/>

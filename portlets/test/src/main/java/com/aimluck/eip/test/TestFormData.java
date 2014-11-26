@@ -78,6 +78,7 @@ public class TestFormData extends ALAbstractFormData {
 
   /** タイトル */
   private ALStringField test_name;
+  private ALStringField url;
 
   /** カテゴリID */
 //  private ALNumberField category_id;
@@ -222,6 +223,16 @@ public class TestFormData extends ALAbstractFormData {
     note = new ALStringField();
     note.setFieldName(ALLocalizationUtils.getl10n("TODO_SETFIELDNAME_MEMO"));
     note.setTrim(false);
+//
+
+
+    url = new ALStringField();
+    url.setFieldName(ALLocalizationUtils
+    	      .getl10n("TODO_SETFIELDNAME_URL"));
+    url.setTrim(false);
+
+//
+
     // 開始日
 //    start_date = new ALDateField();
 //    start_date.setFieldName(ALLocalizationUtils
@@ -840,6 +851,15 @@ public class TestFormData extends ALAbstractFormData {
   public ALStringField getNote() {
     return note;
   }
+
+
+
+
+
+
+  public ALStringField getUrl() {
+	    return url;
+	  }
 
   /**
    * 優先度を取得します。 <BR>
