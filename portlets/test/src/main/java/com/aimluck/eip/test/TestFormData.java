@@ -95,6 +95,8 @@ public class TestFormData extends ALAbstractFormData {
   /** メモ */
   private ALStringField note;
 
+
+
   /** 開始日 */
 //  private ALDateField start_date;
 
@@ -511,6 +513,7 @@ public class TestFormData extends ALAbstractFormData {
 
       // タイトル
       test.setTestName(test_name.getValue());
+      test.setUrl(url.getValue());
       // カテゴリID
 //      test.setEipTTestCategory(category);
       // ユーザーID
@@ -712,6 +715,7 @@ public class TestFormData extends ALAbstractFormData {
 
       // タイトル
       test.setTestName(test_name.getValue());
+      test.setUrl(url.getValue());
       // カテゴリID
 //      test.setEipTTestCategory(category);
       // ユーザーID

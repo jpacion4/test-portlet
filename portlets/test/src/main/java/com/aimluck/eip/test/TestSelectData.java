@@ -465,6 +465,11 @@ public class TestSelectData extends
       rd.setTestName(ALCommonUtils.compressString(
         record.getTestName(),
         getStrLength()));
+
+      rd.setUrl(ALCommonUtils.compressString(
+    	        record.getUrl(),
+    	        getStrLength()));
+
 //      if (!TestUtils.isEmptyDate(record.getStartDate())) {
 //        rd.setStartDate(ALDateUtil
 //          .format(record.getStartDate(), "yyyy年M月d日(E)"));
@@ -550,7 +555,7 @@ public class TestSelectData extends
       rd.setTestId(record.getTestId().longValue());
 
 
-      rd.setTestUrl(record.getTestUrl());
+      rd.setUrl(record.getUrl());
 
 
 //      rd
@@ -572,6 +577,10 @@ public class TestSelectData extends
 //        .getPriority()
 //        .intValue()));
       rd.setNote(record.getNote());
+      rd.setUrl(record.getUrl());
+
+
+
 //      rd.setCreateUserName(ALEipUtils
 //        .getALEipUser(record.getCreateUserId())
 //        .getAliasName()

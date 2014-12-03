@@ -128,6 +128,8 @@ public class TestResultData implements ALData {
 //    category_name = new ALStringField();
     note = new ALStringField();
     note.setTrim(false);
+
+    url= new ALStringField();
 //    start_date = new ALStringField();
 //    end_date = new ALStringField();
 //    priority_image = new ALStringField();
@@ -252,6 +254,13 @@ public class TestResultData implements ALData {
     return ALEipUtils.getMessageList(note.getValue());
   }
 
+
+
+  public String getUrl() {
+	    return url.getValue();
+	  }
+
+
   /**
    * @return
    */
@@ -275,19 +284,13 @@ public class TestResultData implements ALData {
     note.setValue(string);
   }
 
+  public void setUrl(String string) {
+	    url.setValue(string);
+	  }
+
   /**
    * @return
    */
-
-
-  public void setUrl(String string) {
-	    url.setValue(string);
-  }
-
-
-  public String getUrl() {
-	    return ALEipUtils.getMessageList(url.getValue());
-	  }
 
 
 
