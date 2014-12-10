@@ -178,6 +178,7 @@
 	</db-relationship>
 	<db-relationship name="eipTTest" source="turbine_user" target="eip_t_test" toMany="true">
 		<db-attribute-pair source="USER_ID" target="USER_ID"/>
+		<db-attribute-pair source="USER_ID" target="USER_ID"/>
 	</db-relationship>
 	<db-relationship name="eipTTimeline" source="turbine_user" target="eip_t_timeline" toMany="true">
 		<db-attribute-pair source="USER_ID" target="OWNER_ID"/>

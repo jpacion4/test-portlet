@@ -78,6 +78,8 @@ public class TestFormData extends ALAbstractFormData {
 
   /** タイトル */
   private ALStringField test_name;
+  /** 追加機能**/
+  private ALStringField evaluation;
   private ALStringField url;
 
   /** カテゴリID */
@@ -231,7 +233,14 @@ public class TestFormData extends ALAbstractFormData {
     url = new ALStringField();
     url.setFieldName(ALLocalizationUtils
     	      .getl10n("TODO_SETFIELDNAME_URL"));
-    url.setTrim(false);
+
+
+
+    evaluation = new ALStringField();
+    evaluation.setFieldName(ALLocalizationUtils
+    	      .getl10n("TODO_SETFIELDNAME_EVALUATION"));
+
+
 
 //
 
@@ -513,7 +522,13 @@ public class TestFormData extends ALAbstractFormData {
 
       // タイトル
       test.setTestName(test_name.getValue());
-      test.setUrl(url.getValue());
+      test.setTestUrl(url.getValue());
+      test.setEvaluation(evaluation.getValue());
+
+
+
+
+
       // カテゴリID
 //      test.setEipTTestCategory(category);
       // ユーザーID
@@ -715,7 +730,7 @@ public class TestFormData extends ALAbstractFormData {
 
       // タイトル
       test.setTestName(test_name.getValue());
-      test.setUrl(url.getValue());
+      test.setTestUrl(url.getValue());
       // カテゴリID
 //      test.setEipTTestCategory(category);
       // ユーザーID
@@ -855,6 +870,11 @@ public class TestFormData extends ALAbstractFormData {
   public ALStringField getNote() {
     return note;
   }
+
+
+  public ALStringField getEvaluation() {
+	    return evaluation;
+	  }
 
 
 

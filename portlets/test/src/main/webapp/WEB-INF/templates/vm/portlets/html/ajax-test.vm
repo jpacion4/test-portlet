@@ -103,6 +103,7 @@
 #ALtdcellAtt("<div>$!record.CategoryNameHtml</div>" '')
 #ALtdcellAtt("<div>$!record.userNameHtml</div>" '')
 #ALtdcellAtt("<div>$!record.url</div>" 'class="center" nowrap="nowrap"')
+#ALtdcellAtt("<div>$!record.evaluation</div>" 'class="center" nowrap="nowrap"')
 #ALtdcellAtt("<div>$!record.UpdateDate</div>" 'class="right" nowrap="nowrap"')
 </tr>
 #end

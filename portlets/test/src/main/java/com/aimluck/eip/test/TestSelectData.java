@@ -467,7 +467,7 @@ public class TestSelectData extends
         getStrLength()));
 
       rd.setUrl(ALCommonUtils.compressString(
-    	        record.getUrl(),
+    	        record.getTestUrl(),
     	        getStrLength()));
 
 //      if (!TestUtils.isEmptyDate(record.getStartDate())) {
@@ -554,8 +554,8 @@ public class TestSelectData extends
       rd.setTestName(record.getTestName());
       rd.setTestId(record.getTestId().longValue());
 
-
-      rd.setUrl(record.getUrl());
+      rd.setEvaluation(record.getEvaluation());
+      rd.setUrl(record.getTestUrl());
 
 
 //      rd
@@ -577,8 +577,8 @@ public class TestSelectData extends
 //        .getPriority()
 //        .intValue()));
       rd.setNote(record.getNote());
-      rd.setUrl(record.getUrl());
-
+      rd.setUrl(record.getTestUrl());
+      rd.setEvaluation(record.getEvaluation());
 
 
 //      rd.setCreateUserName(ALEipUtils

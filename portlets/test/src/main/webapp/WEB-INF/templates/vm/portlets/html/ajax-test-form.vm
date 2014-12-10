@@ -53,6 +53,11 @@
 #ALtdcaption($!result.getFieldName("note"))
 #ALtditemheader()
 #ALtextarea('note' $!result.Note 10 40)
+
+#ALtdcaption($!result.getFieldName("evaluation"))
+#ALtditemheader()
+#ALtextarea('evaluation' $!result.Evaluation 10 40)
+
 #ALtditemfooter()
 #ALtablefooter()
 #ALbuttonheader()

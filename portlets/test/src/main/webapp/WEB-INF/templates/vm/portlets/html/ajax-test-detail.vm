@@ -40,6 +40,10 @@ $!result.Detail.TestName
 #ALtditem($!result.Detail.Url)
 
 
+#ALtdcaption($l10n.TODO_EVALUATION)
+#ALtditem($!result.Detail.Evaluation)
+
+
 #ALtablefooter()
 #ALbuttonheader()
 #if($result.Detail.isSelfTest())

@@ -97,6 +97,7 @@ public class TestResultData implements ALData {
 
 
   private ALStringField url;
+  private ALStringField evaluation;
 
 
 
@@ -128,6 +129,8 @@ public class TestResultData implements ALData {
 //    category_name = new ALStringField();
     note = new ALStringField();
     note.setTrim(false);
+
+    evaluation = new ALStringField();
 
     url= new ALStringField();
 //    start_date = new ALStringField();
@@ -261,6 +264,11 @@ public class TestResultData implements ALData {
 	  }
 
 
+  public String getEvaluation() {
+	    return evaluation.getValue();
+	  }
+
+
   /**
    * @return
    */
@@ -286,6 +294,11 @@ public class TestResultData implements ALData {
 
   public void setUrl(String string) {
 	    url.setValue(string);
+	  }
+
+
+  public void setEvaluation(String string) {
+	    evaluation.setValue(string);
 	  }
 
   /**

@@ -62,6 +62,7 @@ public class TestDetailScreen extends ALVelocityScreen {
   /**
    * @return
    */
+
   @Override
   protected String getPortletName() {
     return TestUtils.TEST_PORTLET_NAME;
